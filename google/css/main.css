@@ -1,0 +1,221 @@
+
+    body{
+        /*cambio de fuente color y margen en  el cuerpo de la pagina web */
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:white;
+    } 
+    
+   
+    header{
+       /*diseño de la parte de hasta arriba de la pagina web*/
+        width: 100%;
+        height: 60px;
+    }
+    
+    header nav{
+        display: flex;
+        /* justificar a la derecha */
+        justify-content: flex-end;
+    }
+    /*cambio de iconos que estan anidados nav esta dentro del header eso es lo que se modifica en dentro del head */
+     /*cuando algo esta dentro de nav o div lo llamamos en orden en este caso esta dentro de header despues dentro de nav y esta en un clase llamamos a una clase medienate un punto y nombre de una clase vamos de afuera hacia dentro para llamarlos*/
+
+    header nav .nav-right-section{
+        width: 250px;
+        height: auto;
+        display: flex;
+        list-style: none;
+        /* justificar hacia el  centro con respecto al  inical del header*/
+        justify-content: center;
+        align-items: center;
+    }
+    
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    nav .nav-right-section a{
+        margin-right: 15px;
+        color: black;
+    }
+    
+    nav .nav-right-section .menu{
+        background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+        width: 20px; /*anchura*/
+        height: 20px;/* cuando esta en automatico respeta las reglas que la pagina va  teniendo*/
+        background-size: contain;
+        margin-right: 15px;
+        
+        
+
+    }
+    
+    nav .nav-right-section .imgpp{
+        background-image:url( https://lh3.googleusercontent.com/ogw/AOLn63HkEiy-47XI0XRF4-Bec12bEj5YdFJk6Hd4NWcacw=s64-c-mo);
+        background-size: contain;
+        border-radius: 50%;/* borde  y radio de imagen*/
+        width: 22px;
+        height: 22px;
+       
+    }
+    
+    /* parte del main*/
+    
+    main{
+        margin-top: 55px;
+        text-align: center;
+    }
+    
+     /* parte del logo*/
+    main .main-logo{
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    
+    main .main-logo img{
+        width: 310px;
+        height: 110px;
+    }
+    
+    /*input */
+    main .main-input{
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    
+    main .main-input-container{
+        width: 500px;
+        border-radius: 75px;
+        
+        background-color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    
+    }
+    
+    main .main-input input{
+        border: none;
+        width: 450px;
+        height: 40px;
+        outline: none;
+        background-color:white;
+        border-radius: 75px;
+    
+    }
+    
+    main .main-input-container:hover{
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    }
+    
+     /*edicion de iconos*/
+    main .main-input .search-icon{
+        background-image: url("https://img.icons8.com/android/24/000000/search.png");
+        background-position: center;
+        background-size: contain;
+        width: 20px;
+        background-repeat: no-repeat;
+        height: 20px;
+        opacity: 0.5;
+        margin-left: 10px;
+        
+    }
+    
+    main .main-input .micro-icon{
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    main .main-input .cam-icon{
+        background-image: url("https://seekicon.com/free-icon-download/google-lens_1.png");
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 16px;
+        margin-left: 14px;
+    }
+     /* edicion de botones*/
+    main .main-button{
+        width: 500px;
+        margin: 0 auto;
+    }
+    main .main-button div{
+        display: inline-block;
+    }
+    
+    main .main-button button{
+        
+        color: #3c4043;
+        width: 150px;
+        height: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+        background-color grey;
+        opacity: 0.7;
+        border-radius: 5px;
+    }
+    
+    main .main-button button:hover{
+         /*color del texto despues de hover*/
+        box-shadow: 0 1px 1px rgba(185, 101, 101, 0.1);
+       
+        color:white;
+       
+        background-color:white;
+        opacity: 1;
+    }
+    
+    /*footer */
+    
+    footer{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        font-size: 13px;
+        background-color:grey;
+        opacity: 0.65;
+        border-top: 1px grey;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        bottom: 0;
+    }
+    
+    footer ul{
+        margin: 10px;
+        list-style: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    
+    footer .footer-left{
+        justify-content: left;
+    
+    }
+    
+    footer .footer-right{
+        justify-content: right;
+    }
+    
+    footer ul li a{
+        color:white;
+        margin: 10px; 
+    }
